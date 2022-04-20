@@ -4,4 +4,6 @@ module.exports = {
   pages: {
     "*": ["common"],
   },
+  loadLocaleFrom: (lang, ns) =>
+    import(`./locales/${ns}_${lang}.json`).then((m) => m.default),
 };
