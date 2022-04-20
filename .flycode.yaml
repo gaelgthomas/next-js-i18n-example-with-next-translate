@@ -1,0 +1,11 @@
+version: "0.1"
+environments:
+  - name: main
+    branch: main
+    mode: pull-request
+apps:
+  - name: next-js-i18n-example-with-next-translate
+    path: ""
+    text-resources:
+      - path: locales/*.json
+        format: flat-key-value
